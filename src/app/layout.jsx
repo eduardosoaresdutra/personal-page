@@ -1,3 +1,4 @@
+import NavegationBar from "@/components/navegation-bar"
 import "./globals.css"
 import { Gabarito } from "next/font/google"
 
@@ -11,7 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={gabarito.className + ` text-white`}>{children}</body>
+      <body className={gabarito.className + ` flex flex-row w-screen text-white`}>
+        <NavegationBar />
+        { children }
+      </body>
     </html>
   )
 }

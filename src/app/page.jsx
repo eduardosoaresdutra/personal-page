@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Home() {
   return (
-    <main className="bg-dark-purple h-screen">
+    <main className="bg-dark-purple w-full h-screen overflow-y-scroll">
       <Header />
     </main>
   )

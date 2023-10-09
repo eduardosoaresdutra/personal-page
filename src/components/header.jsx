@@ -3,17 +3,16 @@ import { H1, H3 } from "./shared/headings";
 
 export default function Header() {
     return (
-        <header className="flex flex-col justify-center items-center w-screen gap-10 h-screen">
-            <div className="flex flex-col justify-center items-center gap-1">
+        <header className="flex flex-col justify-center items-center w-full h-screen">
+            <div className="flex flex-col items-center gap-10">
+                <div className="flex flex-col justify-center items-center gap-1">
                 <H3>Hello, I'm</H3>
-                <div className="flex flex-row justify-center gap-8">
-                    <H1>Eduardo</H1>
-                    <H1 className="text-aquamarine">Dutra</H1>
+                <H1 className="text-center">Eduardo <span className="text-aquamarine">Dutra</span></H1>
                 </div>
-            </div>
-            <div className="flex flex-row gap-6">
-                <Button>About me</Button>
-                <Button option="secondary">Contact</Button>
+                <div className="flex flex-row gap-3">
+                    <Button>About me</Button>
+                    <Button option="secondary">Contact</Button>
+                </div>
             </div>
         </header>
     );
