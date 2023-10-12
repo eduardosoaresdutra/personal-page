@@ -6,12 +6,12 @@ export function H1({ children, className = "" }) {
 
 export function H2({ children, className = "" }) {
     return (
-        <h2 className={`md:text-6xl text-4xl ${className}`}>{children}</h2>
+        <h2 className={`md:text-5xl text-3xl ${className}`}>{children}</h2>
     );
 }
 
 export function H3({ children, className = "" }) {
     return (
-        <h3 className={`md:text-4xl text-2xl ${className}`}>{children}</h3>
+        <h3 className={`md:text-3xl text-xl ${className}`}>{children}</h3>
     );
 }

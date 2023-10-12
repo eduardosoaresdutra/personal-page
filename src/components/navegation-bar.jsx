@@ -4,12 +4,13 @@ export default function NavegationBar() {
     return (
         <>
             <nav className="w-96 bg-slate-blue h-screen
-                            flex flex-col justify-center items-center">
+                            flex flex-col justify-around items-center">
                 <Image
                     src="/profile.png"
-                    width={120}
-                    height={120}
-                    className="border-4 border-tropical-indigo rounded-full"
+                    width={150}
+                    height={150}
+                    className="border-2 border-aquamarine rounded-full
+                                p-1"
                 />
                 <ul className="flex flex-col gap-4
                             text-2xl">
@@ -18,6 +19,7 @@ export default function NavegationBar() {
                     <li>icon Career</li>
                     <li>icon Contact</li>
                 </ul>
+                <span>Copyright</span>
             </nav>
         </>
     );
