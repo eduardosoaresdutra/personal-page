@@ -2,7 +2,7 @@ import Section from "./shared/section";
 
 export default function AboutSection() {
     return (
-        <Section title="About me" className="bg-space-cadet" id="about">
+        <Section title="About me" id="about">
             <p className="w-2/3 text-lg text-justify my-2">
                 Hi, nice to see you here! I'm Eduardo, a web developer, computer scientist, animal lover and an entushiast into the games world.
                 Throughout my career I had the oportunity to work from a startup project to one of Brazil's biggest IT consulting company, where I had the privilege to contribute

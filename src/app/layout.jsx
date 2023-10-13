@@ -1,6 +1,8 @@
-import NavegationBar from "@/components/navegation-bar"
-import "./globals.css"
+import NavegationBar from "@/components/navegation-bar";
 import { Gabarito } from "next/font/google"
+
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import "./globals.css";
 
 const gabarito = Gabarito({ subsets: ["latin"] })
 
