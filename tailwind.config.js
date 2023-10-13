@@ -13,6 +13,7 @@ module.exports = {
       "tropical-indigo": "#8D86C9",
       "white": "#FDFDFF",
       "aquamarine": "#00FFCD",
+      "transparent": "transparent",
     },
   },
   plugins: [],

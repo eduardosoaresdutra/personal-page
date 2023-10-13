@@ -1,3 +1,4 @@
+import Button from "./shared/button";
 import Section from "./shared/section";
 
 export default function AboutSection() {
@@ -16,6 +17,10 @@ export default function AboutSection() {
             <p className="w-2/3 text-lg text-justify my-2">
                 If you feel interested into knowing more about me, feel free to check out my social profiles bellow.
             </p>
+            <div>
+                <Button>Button 1</Button>
+                <Button option="secondary">Button 2</Button>
+            </div>
         </Section>
     );
 }
