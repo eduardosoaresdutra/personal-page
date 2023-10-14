@@ -12,6 +12,12 @@ export function H2({ children, className = "" }) {
 
 export function H3({ children, className = "" }) {
     return (
-        <h3 className={`md:text-3xl text-xl ${className}`}>{children}</h3>
+        <h3 className={`md:text-4xl text-2xl ${className}`}>{children}</h3>
+    );
+}
+
+export function H4({ children, className = "" }) {
+    return (
+        <h4 className={`md:text-2xl text-xl ${className}`}>{children}</h4>
     );
 }
