@@ -15,12 +15,9 @@ export default function AboutSection() {
                 microfront-end architecture, even C# and Java has passed through me in personal projects!
             </p>
             <p className="w-2/3 text-lg text-justify my-2">
-                If you feel interested into knowing more about me, feel free to check out my social profiles bellow.
+                If you feel interested into knowing more about me, feel free to check out more along the page.
             </p>
-            <div>
-                <Button>Button 1</Button>
-                <Button option="secondary">Button 2</Button>
-            </div>
+            <Button className="my-10">Download CV</Button>
         </Section>
     );
 }
