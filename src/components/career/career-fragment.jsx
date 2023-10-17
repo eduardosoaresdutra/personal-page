@@ -1,17 +1,18 @@
-"use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import { H3, H4 } from "../shared/headings";
 
-export default function CareerFragment({ index = 0, position = "", company = "", techStack = "" }) {
+export default function CareerFragment({ index = 0, position = "", company = "", timeInterval = "", techStack = "" }) {
     const Company = <H3>{company}</H3>
     const Position = <H4>{position}</H4>
+    const TimeInterval = <p className="text-base"><em>{timeInterval}</em></p>
     const TechStack = <p className="text-lg">{techStack}</p>
     
     const CareerInfo =
-    <div className={`flex flex-col pt-8 px-4 ${index % 2 ? "text-left" : "text-right"}`}>
+    <div className={`flex flex-col pt-6 px-4 ${index % 2 ? "text-left" : "text-right"}`}>
         {Company}
         {Position}
+        {TimeInterval}
         {TechStack}
     </div>;
 
@@ -28,7 +29,7 @@ export default function CareerFragment({ index = 0, position = "", company = "",
 
     return (
         <div className="flex flex-row">
-            <div className="w-72 h-52">{ buildCareerInfo("left") }</div>
+            <div className="w-72 h-56">{ buildCareerInfo("left") }</div>
             <div className="flex flex-col items-center">
                 <FontAwesomeIcon icon={faCircle} size="xs" className="text-aquamarine" />
                 <div className="bg-aquamarine w-1 h-full"></div>

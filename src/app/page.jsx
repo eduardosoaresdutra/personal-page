@@ -1,5 +1,6 @@
 import AboutSection from "@/components/about-section";
 import CareerSection from "@/components/career-section";
+import ContactSection from "@/components/contact-section";
 import Header from "@/components/header";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <AboutSection />
       <CareerSection />
+      <ContactSection />
     </main>
   )
 }

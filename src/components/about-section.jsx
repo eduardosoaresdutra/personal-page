@@ -1,5 +1,7 @@
 import Button from "./shared/button";
 import Section from "./shared/section";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function AboutSection() {
     return (
@@ -17,7 +19,7 @@ export default function AboutSection() {
             <p className="w-2/3 text-lg text-justify my-2">
                 If you feel interested into knowing more about me, feel free to check out more along the page.
             </p>
-            <Button className="my-10">Download CV</Button>
+            <Button className="my-10">Go to GitHub <FontAwesomeIcon icon={faGithub} /></Button>
         </Section>
     );
 }

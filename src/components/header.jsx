@@ -10,8 +10,16 @@ export default function Header() {
                 <H1 className="text-center">Eduardo <span className="text-aquamarine">Dutra</span></H1>
                 </div>
                 <div className="flex flex-row gap-3">
-                    <Button>About me</Button>
-                    <Button option="secondary">Contact</Button>
+                    <Button>
+                        <a href="#about">
+                            About me
+                        </a>
+                    </Button>
+                    <Button option="secondary">
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </Button>
                 </div>
             </div>
         </header>

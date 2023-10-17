@@ -23,13 +23,13 @@ export default function NavegationBar() {
                         </a>
                     </li>
                     <li>
-                        <a href="" className="flex flex-row gap-2 text-xl">
+                        <a href="#about" className="flex flex-row gap-2 text-xl">
                             <FontAwesomeIcon icon={faUser} />
                             About
                         </a>
                     </li>
                     <li>
-                        <a href="" className="flex flex-row gap-2 text-xl">
+                        <a href="#career" className="flex flex-row gap-2 text-xl">
                             <FontAwesomeIcon icon={faBriefcase} />
                             Career
                         </a>
