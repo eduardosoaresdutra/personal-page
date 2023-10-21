@@ -8,7 +8,7 @@ export default function CareerFragment({ index = 0, position = "", company = "",
     const TimeInterval = <p className="text-xs md:text-base pt-2"><em>{timeInterval}</em></p>
     const TechStack = <p className="text-base md:text-lg pt-4">
         <>
-            Used techs:<br/>
+            Tech Stack:<br/>
             {techStack}
         </>
     </p>
