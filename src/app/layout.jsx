@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={gabarito.className + ` flex flex-row w-screen text-white`}>
+      <body className={gabarito.className + ` flex flex-row w-screen text-white w-screen`}>
         <NavegationBar />
         { children }
       </body>

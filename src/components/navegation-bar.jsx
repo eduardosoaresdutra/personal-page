@@ -6,7 +6,8 @@ export default function NavegationBar() {
     return (
         <>
             <nav className="w-80 bg-slate-blue h-screen
-                            flex flex-col justify-around items-center">
+                            md:flex flex-col justify-around items-center
+                            hidden">
                 <Image
                     src="/profile.png"
                     width={150}
@@ -35,7 +36,7 @@ export default function NavegationBar() {
                         </a>
                     </li>
                     <li>
-                        <a href="" className="flex flex-row gap-2 text-xl">
+                        <a href="#contact" className="flex flex-row gap-2 text-xl">
                             <FontAwesomeIcon icon={faAddressBook} />
                             Contact
                         </a>

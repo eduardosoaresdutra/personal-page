@@ -5,7 +5,7 @@ import Header from "@/components/header";
 
 export default function Home() {
   return (
-    <main className="bg-dark-purple w-full h-screen overflow-y-scroll">
+    <main className="bg-dark-purple w-full h-screen md:overflow-y-scroll">
       <Header />
       <AboutSection />
       <CareerSection />

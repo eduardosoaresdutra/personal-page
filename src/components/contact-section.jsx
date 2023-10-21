@@ -4,7 +4,7 @@ import Section from "./shared/section";
 
 export default function ContactSection() {
     return (
-        <Section title="Contact">
+        <Section title="Contact" id="contact">
             <div className="flex flex-col h-full text-center justify-center align-center">
                 <H3>Need to reach out?</H3>
                 <H4>Please, feel free to send a message on LinkedIn or e-mail me!</H4>
