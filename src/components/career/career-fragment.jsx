@@ -5,8 +5,8 @@ import { H3, H4 } from "../shared/headings";
 export default function CareerFragment({ index = 0, position = "", company = "", timeInterval = "", techStack = "" }) {
     const Company = <H3>{company}</H3>
     const Position = <H4>{position}</H4>
-    const TimeInterval = <p className="text-base"><em>{timeInterval}</em></p>
-    const TechStack = <p className="text-base md:text-lg">{techStack}</p>
+    const TimeInterval = <p className="text-base pt-2"><em>{timeInterval}</em></p>
+    const TechStack = <p className="text-base md:text-lg pt-2">{techStack}</p>
     
     const CareerInfo =
     <div className={`flex flex-col pt-6 px-4 ${index % 2 ? "text-left" : "text-right"}`}>

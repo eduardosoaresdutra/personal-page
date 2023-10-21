@@ -25,10 +25,10 @@ export default function NavegationBar() {
                         </Link>
                     </li>
                     <li>
-                        <a href="#about" className="flex flex-row gap-2 text-xl" >
+                        <Link href="#about" className="flex flex-row gap-2 text-xl" >
                             <FontAwesomeIcon icon={faUser} />
                             About
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <Link href="#career" className="flex flex-row gap-2 text-xl">
