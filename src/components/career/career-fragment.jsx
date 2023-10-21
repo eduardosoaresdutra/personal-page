@@ -6,7 +6,7 @@ export default function CareerFragment({ index = 0, position = "", company = "",
     const Company = <H3>{company}</H3>
     const Position = <H4>{position}</H4>
     const TimeInterval = <p className="text-base"><em>{timeInterval}</em></p>
-    const TechStack = <p className="text-lg">{techStack}</p>
+    const TechStack = <p className="text-base md:text-lg">{techStack}</p>
     
     const CareerInfo =
     <div className={`flex flex-col pt-6 px-4 ${index % 2 ? "text-left" : "text-right"}`}>
@@ -29,12 +29,12 @@ export default function CareerFragment({ index = 0, position = "", company = "",
 
     return (
         <div className="flex flex-row">
-            <div className="w-72 h-56">{ buildCareerInfo("left") }</div>
+            <div className="w-32 h-max md:w-72 md:h-56">{ buildCareerInfo("left") }</div>
             <div className="flex flex-col items-center">
                 <FontAwesomeIcon icon={faCircle} size="xs" className="text-aquamarine" />
                 <div className="bg-aquamarine w-1 h-full"></div>
             </div>
-            <div className="w-72 h-40">{ buildCareerInfo("right") }</div>
+            <div className="w-32 h-max md:w-72 md:h-56">{ buildCareerInfo("right") }</div>
         </div>
     );
 }

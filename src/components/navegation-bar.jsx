@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse, faUser, faBriefcase, faAddressBook } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function NavegationBar() {
     return (
@@ -18,28 +19,28 @@ export default function NavegationBar() {
                 <ul className="flex flex-col gap-8
                             text-2xl">
                     <li>
-                        <a href="" className="flex flex-row gap-2 text-xl">
+                        <Link href="#home" className="flex flex-row gap-2 text-xl">
                             <FontAwesomeIcon icon={faHouse} />
                             Home
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#about" className="flex flex-row gap-2 text-xl">
+                        <a href="#about" className="flex flex-row gap-2 text-xl" >
                             <FontAwesomeIcon icon={faUser} />
                             About
                         </a>
                     </li>
                     <li>
-                        <a href="#career" className="flex flex-row gap-2 text-xl">
+                        <Link href="#career" className="flex flex-row gap-2 text-xl">
                             <FontAwesomeIcon icon={faBriefcase} />
                             Career
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#contact" className="flex flex-row gap-2 text-xl">
+                        <Link href="#contact" className="flex flex-row gap-2 text-xl">
                             <FontAwesomeIcon icon={faAddressBook} />
                             Contact
-                        </a>
+                        </Link>
                     </li>
                 </ul>
                 <span>Copyright</span>

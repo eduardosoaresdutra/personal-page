@@ -1,9 +1,10 @@
+import Link from "next/link";
 import Button from "./shared/button";
 import { H1, H3 } from "./shared/headings";
 
 export default function Header() {
     return (
-        <header className="flex flex-col justify-center items-center w-full h-screen bg-[url('/backgrounds/header-waves.svg')] bg-cover">
+        <header className="flex flex-col justify-center items-center w-full h-screen bg-[url('/backgrounds/header-waves.svg')] bg-cover" id="home">
             <div className="flex flex-col items-center gap-10">
                 <div className="flex flex-col justify-center items-center gap-1">
                 <H3>Hello, I'm</H3>
@@ -11,14 +12,14 @@ export default function Header() {
                 </div>
                 <div className="flex flex-row gap-3">
                     <Button>
-                        <a href="#about">
+                        <Link href="#about">
                             About me
-                        </a>
+                        </Link>
                     </Button>
                     <Button option="secondary">
-                        <a href="#contact">
+                        <Link href="#contact">
                             Contact
-                        </a>
+                        </Link>
                     </Button>
                 </div>
             </div>
